@@ -1,0 +1,132 @@
+TIME PROCESS Initialization: 	Time elapsed = 2044611
+
+MODEL 0	 Dimension 2	 Element Type 5	 Level of Refinement 1
+TIME PROCESS to geometric Mesh: 	Time elapsed = 2093
+  Solving with Method 0
+
+Saida do erro para formulacão H1, com ordem p  = 3
+   Computational mesh created:
+   NDofs = 169	 NDofs before condensed = 105
+
+TIME PROCESS Creating CMesh : 	Time elapsed = 1093
+
+TIME PROCESS Assembling : 	Time elapsed = 15032
+Dimension of the linear system equations
+K: 105 x 105
+
+TIME PROCESS Solving : 	Time elapsed = 763
+
+MODEL 0   Element: 5   POrder: 3
+
+Aproximation Error:
+
+############
+true_error (Norma H1)    = 0.0534336
+L2_error (Norma L2)      = 0.00271882
+estimate (Semi-norma H1) = 0.0533643
+flux (u_x) error         = 0.0377343
+flux (u_y) error         = 0.0377343
+flux sqrt(u_x^2+u_y^2)   = 0.0533643
+
+TIME PROCESS Computing L2 error : 	Time elapsed = 87840
+
+TIME PROCESS writing vtk files : 	Time elapsed = 10628
+
+TIME PROCESS Model 0 : 	Time elapsed = 116474
+
+TIME PROCESS Simulation : 	Time elapsed = 2164745
+
+
+
+RUNNING INFORMATION:
+MODEL PROBLEM OR EQUATION 
+/0 u=SIN(PI*x)SIN(PI*y)SIN(PI*z) 
+/1  u=5*(Pi/2 + ArcTg2*(1 - 2*r*r)) Function with strong gradient 
+/2 SIN*COS*ARCTG Function is highly oscillatory
+/3 Fichera corner. Equacao Solin. --> BC -30
+/4 Fichera corner. Equacao Rachowicz --> BC -40 e -41
+/5 Linear solution in x: u=-2*x+3 BC Dirichlet x=-1 u=5 and x=1 u=1
+/6 Linear conservation law
+/7 Rotating cone. Initials: 6 D0
+/8 Reflecting Shock. Initials: 13 DNN?
+@0
+TIME DEPENDENT: /0 to stationary state /1 to transient state(RK)
+@0
+INITIAL FUNCTION Uzero
+@6 
+MATERIAL ID /Number of materials /Material IDs
+@1  3
+BCMATERIAL ID  /Number of bc materials /BC Material IDs
+@1  -30
+
+GEOMETRICAL INFORMATION
+Type of geometrical element:
+// 1 - linear(linear), 3 - triangle(line), 5 - quadrilateral(lin), 
+// 8 - prism(lin), 10 - hexahedra(lin), 12 - tetrahedra(lin), 14 - pyramid(lin). 0 - point
+// 40 - All elements (linear: 1, 3, 5, 8, 10,12, 14) --> 20 - All elements no 3D (linear: 1, 3, 5) --> 30 - All elements 3D (linear: 8, 10, 12, 14)
+@5
+
+FROM GID FILE? /0 whether is simple mesh, /1 whether the mesh is from gid file, then give the gid filename @0 Quadrado_Quadrilaterals_GID.dump Triangles.dump
+
+REFINEMENTS:
+Number of refinements to apply into the original geometrical mesh: nref
+@1
+
+PRINTING GEOMETRIC MESH: /0 no print, /1 print @0
+
+APPROXIMATION SPACES: /0 (H1) /1 (GD) /2 (HdivH1) /3 (enrichment HdivH1)
+@0 
+
+STATIC CONDENSATION: /1 to apply static condensation /0 no apply 
+@1
+
+P_ORDER: Order to piecewise polynomials: 
+pOrder @3
+
+MATRIX STRUCT: /0 Skyline Matrix /1 No Symm Skyline Matrix /2 Symm Band Matrix /3 Band Matrix
+@1
+
+LINEAR SYSTEM SOLVER
+/0 Direct - LU
+/1 Direct - LDLt
+/2 Iterative - Using GMRES (no symmetric)
+/3 Iterative - Using CG (symmetric case)
+Solver to System equation @0 
+
+TO POST PROCESS - Output of solutions
+Number of scalar variables to output solutions, and the names of the scalar variables: @3	Pressure	ExactPressure	POrder 	density velocity_x	velocity_y	energy
+Number of vector variables to output solutions, and the names of the vector variables: @1	Flux	ExactFlux
+
+COMPUTING U AND FLUX ERRORS: @1
+
+COMPUTING HDIV ERRORS: @0
+
+APPLYING ADAPTIVITY?
+@0
+
+ERROR ESTIMATOR TYPE: /0 Gradient reconstruction /1 Weighted Gradient reconstruction /2 Flux & Potential reconstruction
+@2
+
+PRINT RUNNING INFORMATION: /0 no print /1 print current info file
+@0
+
+SPECIAL COEFFICIENTS:
+To Model 1 (arc tg) or 2 (high oscillatory):
+SOLCOEFF @0.4  PICOEFF @9.  ARGUMENTCOEFF @10.   SUMAND @1.   RADIOCOEFF @20.   YValue @0.
+
+TRANSIENT MODELS
+Initial time
+@0.
+End time sqrt(2)/2 = 0.70710678119 -> 2*PI=6.283185307179586232
+@2.
+
+MINIME TIME STEP
+@1.e-6
+
+Runge Kutta Order
+@1
+
+SPECIAL COEFFICIENTS:
+To Model 1 (arc tg) or 2 (high oscillatory):
+SOLCOEFF @5.  PICOEFF @0.5  ARGUMENTCOEFF @10.   SUMAND @0.25   RADIOCOEFF @2.   YValue @0.
+

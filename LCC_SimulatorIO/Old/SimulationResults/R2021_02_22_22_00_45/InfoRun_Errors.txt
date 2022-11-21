@@ -1,0 +1,181 @@
+TIME PROCESS Initialization: 	Time elapsed = 2086560
+
+MODEL 0	 Dimension 2	 Element Type 5	 Level of Refinement 1
+TIME PROCESS to geometric Mesh: 	Time elapsed = 2317
+  Solving with Method 1
+
+Saida do erro para formulacão GD, com ordem p  = 2
+   Computational mesh created:
+   NDofs = 144	 NDofs before condensed = 144
+
+TIME PROCESS Creating CMesh : 	Time elapsed = 1646
+
+TIME PROCESS Assembling : 	Time elapsed = 9567
+Dimension of the linear system equations
+K: 144 x 144
+
+TIME PROCESS Solving : 	Time elapsed = 1867
+
+MODEL 0   Element: 5   POrder: 2
+
+Aproximation Error:
+
+############
+true_error (Norma H1)    = 0.639508
+L2_error (Norma L2)      = 0.174396
+estimate (Semi-norma H1) = 0.615269
+flux (u_x) error         = 0.435061
+flux (u_y) error         = 0.435061
+flux sqrt(u_x^2+u_y^2)   = 0.615269
+
+TIME PROCESS Computing L2 error : 	Time elapsed = 60053
+
+TIME PROCESS writing vtk files : 	Time elapsed = 8215
+
+Gradient estimated upper 1.4587   Gradient estimated lower 1.28805
+Gradient estimated upper 0.398204   Gradient estimated lower 0.33787   Computational mesh created:
+   NDofs = 576	 NDofs before condensed = 576
+
+TIME PROCESS Creating CMesh : 	Time elapsed = 2392
+
+TIME PROCESS Assembling : 	Time elapsed = 36745
+Dimension of the linear system equations
+K: 576 x 576
+
+TIME PROCESS Solving : 	Time elapsed = 23610
+
+MODEL 0   Element: 5   POrder: 2
+
+Aproximation Error:
+
+############
+true_error (Norma H1)    = 0.223958
+L2_error (Norma L2)      = 0.0753574
+estimate (Semi-norma H1) = 0.210899
+flux (u_x) error         = 0.149128
+flux (u_y) error         = 0.149128
+flux sqrt(u_x^2+u_y^2)   = 0.210899
+
+TIME PROCESS Computing L2 error : 	Time elapsed = 254003
+
+TIME PROCESS writing vtk files : 	Time elapsed = 30197
+
+Gradient estimated upper 0.73894   Gradient estimated lower 0.426627
+Gradient estimated upper 0.311436   Gradient estimated lower 0.0114795   Computational mesh created:
+   NDofs = 2304	 NDofs before condensed = 2304
+
+TIME PROCESS Creating CMesh : 	Time elapsed = 8400
+
+TIME PROCESS Assembling : 	Time elapsed = 150832
+Dimension of the linear system equations
+K: 2304 x 2304
+
+TIME PROCESS Solving : 	Time elapsed = 359417
+
+MODEL 0   Element: 5   POrder: 2
+
+Aproximation Error:
+
+############
+true_error (Norma H1)    = 0.0640795
+L2_error (Norma L2)      = 0.023525
+estimate (Semi-norma H1) = 0.059605
+flux (u_x) error         = 0.0421471
+flux (u_y) error         = 0.0421471
+flux sqrt(u_x^2+u_y^2)   = 0.059605
+
+TIME PROCESS Computing L2 error : 	Time elapsed = 973020
+
+TIME PROCESS writing vtk files : 	Time elapsed = 109482
+
+Gradient estimated upper 0.797083   Gradient estimated lower 0.0671641
+Gradient estimated upper 0.104491   Gradient estimated lower 0.00324586   Computational mesh created:
+   NDofs = 4248	 NDofs before condensed = 5536
+
+TIME PROCESS Creating CMesh : 	Time elapsed = 17247
+
+TIME PROCESS Assembling : 	Time elapsed = 402855
+Dimension of the linear system equations
+K: 5536 x 5536
+
+TIME PROCESS Solving : 	Time elapsed = 2175317
+
+MODEL 0   Element: 5   POrder: 2
+
+Aproximation Error:
+
+############
+true_error (Norma H1)    = 0.00985078
+L2_error (Norma L2)      = 0.00215994
+estimate (Semi-norma H1) = 0.00961106
+flux (u_x) error         = 0.00679605
+flux (u_y) error         = 0.00679605
+flux sqrt(u_x^2+u_y^2)   = 0.00961106
+
+TIME PROCESS Computing L2 error : 	Time elapsed = 1910102
+
+TIME PROCESS writing vtk files : 	Time elapsed = 220792
+
+Gradient estimated upper 0.472458   Gradient estimated lower 0.0253341
+Gradient estimated upper 0.107027   Gradient estimated lower 0.000258867   Computational mesh created:
+   NDofs = 12888	 NDofs before condensed = 16932
+
+TIME PROCESS Creating CMesh : 	Time elapsed = 53507
+
+TIME PROCESS Assembling : 	Time elapsed = 1312511
+Dimension of the linear system equations
+K: 16932 x 16932
+
+TIME PROCESS Solving : 	Time elapsed = 22140974
+
+MODEL 0   Element: 5   POrder: 2
+
+Aproximation Error:
+
+############
+true_error (Norma H1)    = 0.0156363
+L2_error (Norma L2)      = 0.001525
+estimate (Semi-norma H1) = 0.0155618
+flux (u_x) error         = 0.0110038
+flux (u_y) error         = 0.0110038
+flux sqrt(u_x^2+u_y^2)   = 0.0155618
+
+TIME PROCESS Computing L2 error : 	Time elapsed = 5709558
+
+TIME PROCESS writing vtk files : 	Time elapsed = 640261
+
+Gradient estimated upper 0.592785   Gradient estimated lower 0.00249297
+Gradient estimated upper 0.0735279   Gradient estimated lower 5.15731e-05   Computational mesh created:
+   NDofs = 16992	 NDofs before condensed = 33464
+
+TIME PROCESS Creating CMesh : 	Time elapsed = 69261
+
+TIME PROCESS Assembling : 	Time elapsed = 3310605
+Dimension of the linear system equations
+K: 33464 x 33464
+
+TIME PROCESS Solving : 	Time elapsed = 88899764
+
+MODEL 0   Element: 5   POrder: 2
+
+Aproximation Error:
+
+############
+true_error (Norma H1)    = 0.010539
+L2_error (Norma L2)      = 5.45018e-05
+estimate (Semi-norma H1) = 0.0105389
+flux (u_x) error         = 0.00745213
+flux (u_y) error         = 0.00745213
+flux sqrt(u_x^2+u_y^2)   = 0.0105389
+
+TIME PROCESS Computing L2 error : 	Time elapsed = 8625167
+
+TIME PROCESS writing vtk files : 	Time elapsed = 910372
+
+Gradient estimated upper 0.29901   Gradient estimated lower 0.000404736
+Gradient estimated upper 0.0283606   Gradient estimated lower 9.39265e-06   Computational mesh created:
+   NDofs = 39024	 NDofs before condensed = 84776
+
+TIME PROCESS Creating CMesh : 	Time elapsed = 168443
+
+TIME PROCESS Assembling : 	Time elapsed = 10616395

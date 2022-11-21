@@ -1,0 +1,2 @@
+The SimulatorIO directory must be inside the Documents directory and outside the FirstSoftware directory. Unless you change the path of the InputData and SimulationResults directories.
+The externallibs directory was not uploaded to the repository because it exceeded the weight limit (specifically the pzlib subdirectory). As it is the neopz installation directory, it can be generated with CMake or downloaded from the LCCStudies Drive repository.
